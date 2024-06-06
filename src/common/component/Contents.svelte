@@ -1,0 +1,45 @@
+<script>
+    import { page } from '$app/stores';
+    import { Container, TabContent, TabPane } from '@sveltestrap/sveltestrap';
+    import src1 from '~/common/images/image_1.jpg';
+    import src2 from '~/common/images/image_2.jpg';
+   
+    const pageParam = $page.params;
+    let alt = 'image';
+    let hasSlug = pageParam.hasOwnProperty('slug');
+    let activeTab = 'sequence';
+</script>
+
+{#if hasSlug}
+    <div class="container">
+        <p class="text">cat</p>
+        <img src={src1} alt={alt}>
+    </div>
+{:else}
+    <Container sm>
+        <h5>{activeTab}</h5>
+        <TabContent on:tab={(e) => (activeTab = e.detail)}>
+            <TabPane tabId="Cat1" tab="Cat1" active>
+                <img src={src1} alt={alt} />
+            </TabPane>
+            <TabPane tabId="Cat2" tab="Cat2" >
+                <img src={src2} alt={alt} />
+            </TabPane>
+        </TabContent>
+    </Container>
+{/if}
+
+<style>
+    div.container {
+        background-color: rgb(16, 0, 85);
+        height: 500px;
+    }
+    p.text {
+        font: oblique;
+        color: azure;
+    }
+    img {
+        max-width: 150px;
+        max-height: 200px;
+    }
+</style>

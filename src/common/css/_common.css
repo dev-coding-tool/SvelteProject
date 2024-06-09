@@ -1,0 +1,35 @@
+span, p, a{
+    font-family: 'Consolas';
+    color: black;
+    text-decoration-line:none;
+}
+div.bg-twocolor{
+    background: linear-gradient(45deg, rgb(255, 81, 81),rgb(81, 81, 255));
+}
+div.container_contents{
+    background-color: white;
+    position: sticky;
+    height: 1000px;
+}
+div.breadcrumb_container{
+    --bs-breadcrumb-divider: '|';
+    border-color: blue;
+    max-height: 30px;
+    background-color: rgb(195, 203, 207);
+    opacity : 0.75;
+}
+img._default {
+    max-width: 150px;
+    max-height: 200px;
+}
+.icon-large {
+    width: 64px;
+    height: 64px;
+}
+.footer_copyright{
+    font-weight: 1000;
+    font-size: small;
+}
+.dark_light_button{
+    /* background-color: red; */
+}

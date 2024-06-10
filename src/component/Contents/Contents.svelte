@@ -2,7 +2,7 @@
     import { page } from '$app/stores';
     import { Container, TabContent, TabPane } from '@sveltestrap/sveltestrap';
     import src1 from '~/lib/images/image_1.jpg';
-    import src2 from '~/lib/image/image_2.jpg';
+    import src2 from '~/lib/images/image_2.jpg';
    
     const pageParam = $page.params;
     let alt = 'image';

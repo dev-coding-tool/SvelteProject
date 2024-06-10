@@ -9,7 +9,7 @@
     let hasSlug = pageParam.hasOwnProperty('slug');
     let activeTab = 'sequence';
 </script>
-<div class="container_contents">
+<div class="container_contents py-3">
     {#if hasSlug}
         <div class="container_custom">
             <p class="text">cat</p>

@@ -9,9 +9,11 @@
 			if(localStorage.getItem('theme') == 'dark'){
 				light_mode = true;
 				document.getElementsByClassName('container_contents')[0].classList.add('dark-mode');
+				document.getElementsByClassName('bg-twocolor')[0].classList.add('dark-mode');
 			}else{
 				light_mode = false;
 				document.getElementsByClassName('container_contents')[0].classList.remove('dark-mode');
+				document.getElementsByClassName('bg-twocolor')[0].classList.remove('dark-mode');
 			}
 		}
 	});
@@ -22,10 +24,12 @@
 				light_mode = false;
 				localStorage.setItem('theme','light');
 				document.getElementsByClassName('container_contents')[0].classList.toggle('dark-mode');
+				document.getElementsByClassName('bg-twocolor')[0].classList.toggle('dark-mode');
 			}else{
 				light_mode = true;
 				localStorage.setItem('theme','dark');
 				document.getElementsByClassName('container_contents')[0].classList.toggle('dark-mode');
+				document.getElementsByClassName('bg-twocolor')[0].classList.toggle('dark-mode');
 			}
 		}
 	}

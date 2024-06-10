@@ -5,7 +5,7 @@
 
 <div class="footer_container sticky-bottom">
 	<Breadcurmb />
-	<div class="d-flex justify-content-center bg-twocolor">
+	<div class="d-flex justify-content-center bg-onecolor">
 		<nav class="navbar navbar-expand-md">
 			<div class="container-fluid">
 				<span class="footer_copyright px-2">Copyrightⓒ2024 by Coting-Tool.</span>   

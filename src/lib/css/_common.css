@@ -4,7 +4,10 @@ span, p, a{
     text-decoration-line:none;
 }
 div.bg-twocolor{
-    background: linear-gradient(45deg, rgb(255, 81, 81),rgb(81, 81, 255));
+    background: linear-gradient(45deg, rgb(255, 80, 80),rgb(80, 80, 255));
+}
+div.bg-onecolor{
+    background: rgb(158, 158, 158)
 }
 div.container_contents{
     background-color: white;
@@ -29,7 +32,4 @@ img._default {
 .footer_copyright{
     font-weight: 1000;
     font-size: small;
-}
-.dark_light_button{
-    /* background-color: red; */
 }

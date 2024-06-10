@@ -8,7 +8,7 @@
 <style>
 	:global(div.container_contents) {
 		background-color: #f2eee2;
-		color: #0084f6;
+		color: #000000;
 		position: sticky;
 		height: 1000px;
 		transition: background-color 0.3s
@@ -18,5 +18,11 @@
 		position: sticky;
 		height: 1000px;
 		color: #bfc2c7;
-	}	
+	}
+	:global(div.bg-twocolor){
+		background: linear-gradient(45deg, rgb(255, 80, 80),rgb(80, 80, 255));
+	}
+	:global(div.bg-twocolor.dark-mode){
+		background: linear-gradient(45deg ,rgb(80, 80, 255), rgb(255, 80, 80));
+	}
 </style>

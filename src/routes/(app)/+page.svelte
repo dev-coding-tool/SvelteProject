@@ -1,6 +1,6 @@
 <script>
 	import Contents from '~/component/Contents/Contents.svelte';
-	import {obj, testFunction, Commmon} from '~/common/js/_common.js';
+	import {obj, testFunction, Commmon} from '~/lib/js/_common.js';
 	import { browser } from '$app/environment';
 	if(browser){
 		window.obj = obj;

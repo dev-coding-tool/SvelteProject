@@ -40,7 +40,7 @@
 <div class="navigation_container sticky-top bg-twocolor">
 	<nav class="navbar navbar-expand-md">
 		<div class="container-fluid">
-			<NavbarBrand class="navbar-brand" data-sveltekit-reload href="/">Coding-Tool</NavbarBrand>
+			<NavbarBrand class="navbar-brand fs-4" data-sveltekit-reload href="/">Coding-Tool</NavbarBrand>
 			<ButtonGroup class="ms-auto mx-3" outline="true">
 				{#if light_mode}
 					<Button class="dark_light_button sun" color="white" size="sm" on:click={toggle}>

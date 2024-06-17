@@ -3,7 +3,7 @@
 	import Breadcurmb from '../Breadcrumb/Breadcurmb.svelte';
 </script>
 
-<div class="footer_container sticky-bottom">
+<div class="footer_container fixed-bottom">
 	<Breadcurmb />
 	<div class="d-flex justify-content-center bg-onecolor">
 		<nav class="navbar navbar-expand-md">

@@ -20,10 +20,10 @@
 		color: #bfc2c7;
 		transition: background-color 0.3s;
 	}
-	:global(div.bg-twocolor){
+	:global(.bg-twocolor){
 		background: linear-gradient(45deg, rgb(255, 80, 80),rgb(80, 80, 255));
 	}
-	:global(div.bg-twocolor.dark-mode){
+	:global(.bg-twocolor.dark-mode){
 		background: linear-gradient(45deg ,rgb(80, 80, 255), rgb(255, 80, 80));
 	}
 </style>

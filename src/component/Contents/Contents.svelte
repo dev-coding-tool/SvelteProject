@@ -20,7 +20,7 @@
 	let activeIndex = 0;
 </script>
 
-<div class="container_contents fixed-bottom">
+<div class="container_contents min-vh-100">
 	{#if hasSlug}
 		<div class="container_custom"></div>
 	{:else}

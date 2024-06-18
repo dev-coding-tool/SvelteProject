@@ -32,7 +32,7 @@
             <li class="breadcrumb-item"><a data-sveltekit-reload href="/">Coding-Tool</a></li>
             {#each breadcrumbArray as {name, path}, i}
                 <li class="breadcrumb-item {i == breadcrumbArray.length-1 ? 'active' : ''}" aria-current="page">
-                    <a data-sveltekit-reload href={path}>{name}</a>
+                    <a class="text-capitalize" data-sveltekit-reload href={path}>{name}</a>
                 </li>
             {/each}
         </ol>

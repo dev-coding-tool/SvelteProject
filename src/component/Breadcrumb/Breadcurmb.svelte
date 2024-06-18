@@ -29,10 +29,10 @@
 <div class="breadcrumb_container">
     <nav class="mx-2 py-1" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a data-sveltekit-reload href="/">Coding-Tool</a></li>
+            <li class="breadcrumb-item"><a class="text-decoration-none text-dark" data-sveltekit-reload href="/">Coding-Tool</a></li>
             {#each breadcrumbArray as {name, path}, i}
                 <li class="breadcrumb-item {i == breadcrumbArray.length-1 ? 'active' : ''}" aria-current="page">
-                    <a class="text-capitalize" data-sveltekit-reload href={path}>{name}</a>
+                    <a class="text-decoration-none text-dark text-capitalize" data-sveltekit-reload href={path}>{name}</a>
                 </li>
             {/each}
         </ol>

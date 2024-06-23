@@ -16,17 +16,29 @@
 	}
 
 	function draw(e) {
-		if (!painting) return;
+        if (!painting) return;
 
-		ctx.lineWidth = 1;
-		ctx.lineCap = '';
-		ctx.strokeStyle = 'black';
+        ctx.lineWidth = 1;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = 'black';
 
-		ctx.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
-		ctx.stroke();
-		ctx.beginPath();
-		ctx.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
-	}
+        let clientX, clientY;
+
+        if (e.touches) {
+            // Touch event
+            clientX = e.touches[0].clientX;
+            clientY = e.touches[0].clientY;
+        } else {
+            // Mouse event
+            clientX = e.clientX;
+            clientY = e.clientY;
+        }
+
+        ctx.lineTo(clientX - canvas.getBoundingClientRect().left, clientY - canvas.getBoundingClientRect().top);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(clientX - canvas.getBoundingClientRect().left, clientY - canvas.getBoundingClientRect().top);
+    }
 
 	onMount(() => {
 		ctx = canvas.getContext('2d');
@@ -37,5 +49,8 @@
 <canvas class="bg-white border border-dark" id="drawingCanvas" bind:this={canvas} width="800" height="600"
     on:mousedown={startPosition}
     on:mouseup={endPosition}
-    on:mousemove={draw}>
+    on:mousemove={draw}
+	on:touchstart={startPosition}
+    on:touchend={endPosition}
+    on:touchmove={draw}>
 </canvas>

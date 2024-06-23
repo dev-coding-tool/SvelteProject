@@ -1,6 +1,5 @@
 span, p, a{
     font-family: 'Consolas';
-    color: black;
     text-decoration-line:none;
 }
 .bg-twocolor{
@@ -17,6 +16,9 @@ div.container_contents{
     overflow-y:auto;
     padding-top: 10px;
     padding-bottom: 120px;
+}
+ul.container_list{
+    list-style: none;
 }
 div.breadcrumb_container{
     --bs-breadcrumb-divider: '|';

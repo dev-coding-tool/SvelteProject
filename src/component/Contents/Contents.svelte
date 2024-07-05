@@ -13,6 +13,7 @@
 	import src2 from '~/lib/images/image_2.jpg';
     import src3 from '~/lib/images/image_3.jpg';
 	import Drawing from '../Project/Drawing/Drawing.svelte';
+	import Random from '../Project/Random/Random.svelte';
 
 	const items = [src1, src2, src3];
 	let activeIndex = 0;
@@ -70,6 +71,7 @@
 						<Drawing/>
 					{:else if randomFlag}
 						<p>random</p>
+						<Random/>
 					{/if}
                 </Col>
             </Row>

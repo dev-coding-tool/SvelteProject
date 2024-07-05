@@ -22,7 +22,6 @@ ul.container_list{
 }
 div.breadcrumb_container{
     --bs-breadcrumb-divider: '|';
-    border-color: blue;
     max-height: 30px;
     background-color: rgb(195, 203, 207);
     opacity : 0.75;

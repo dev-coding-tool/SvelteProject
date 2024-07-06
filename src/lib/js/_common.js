@@ -1,29 +1,20 @@
-import { readable } from 'svelte/store';
-import { onMount } from 'svelte';
-
-
-const apiURL = "/api/test";
-
-const getData = async () => {
-    const res = await fetch(apiURL);
-    if(!res.ok){
-        throw new Error('Bad response');
-    } 
-    const items = await res.json();
-    return items;
+// place files you want to import through the `$lib` alias in this folder.
+const obj = {
+    test: 'test'
 }
 
-export const todos = readable([], set => {
-    onMount(() => {
-        getData()
-            .then(set)
-            .catch(err => {
-                console.error('Failed to fetch', err)
-            })
-        return () => {
+function testFunction(test){
+    if(test){
+        console.log(test);
+    }else{
+        console.log('hello');
+    }
+}
 
-        }
-    })
-})
+class Commmon{
+    constructor(){
+        console.log('index.js');
+    }
+}
 
-
+export {obj, testFunction, Commmon};

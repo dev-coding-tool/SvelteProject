@@ -26,7 +26,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltestrap/sveltestrap": "^6.2.7",
-		"puppeteer": "^22.12.1"
+		"@sveltestrap/sveltestrap": "^6.2.7"
 	}
 }

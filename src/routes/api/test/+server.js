@@ -1,7 +1,6 @@
 import { json } from '@sveltejs/kit';
 import dotenv from "dotenv";
 dotenv.config();
-const puppeteer = require('puppeteer-core')
 import * as puppeteer from 'puppeteer-core';
 
 let categoryList = [];

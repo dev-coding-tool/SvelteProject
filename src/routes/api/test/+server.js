@@ -1,10 +1,16 @@
 import { json } from '@sveltejs/kit';
-import * as puppeteer from 'puppeteer';
+require('dotenv').config();
+const puppeteer = require('puppeteer-core')
+//import * as puppeteer from 'puppeteer';
 
 let categoryList = [];
 
 async function run() {
-    const browser = await puppeteer.launch({headless: 'new'});
+    // const browser = await puppeteer.launch({headless: 'new'});
+    const browser = await puppeteer.connect({
+        // browserWSEndpoint: process.env.CHROME_WS_ENDPOINT,
+        browserWSEndpoint: `wss://chrome.browserless.io?token=${process.env.BLESS_TOKEN}`
+    });
     const page = await browser.newPage();
 
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'); //headeless: true일때 느린 현상 제거

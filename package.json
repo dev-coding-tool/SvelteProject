@@ -27,7 +27,6 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltestrap/sveltestrap": "^6.2.7",
-		"dotenv": "^16.4.5",
-		"puppeteer-core": "^22.12.1"
+		"puppeteer": "^22.12.1"
 	}
 }
